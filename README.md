@@ -16,7 +16,7 @@ cd tests/
 pip install -r requirements.txt
 robot -d results -L TRACE robot/
 
-# check logs.html in results folder
+# check logs.html in results folder (auto-created after test run)
 # look at the code of the lib and the tests
 # You got the idea!
 ```
