@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# IDEs and Editors
+.vscode/
+
+# Robot Framework test results
+results/
