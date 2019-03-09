@@ -1,7 +1,7 @@
 # robotframework-dockerlibrary
 
 ## What?
-A Robot Framework library to control Docker containers
+A [Robot Framework](https://robotframework.org/) library to control [Docker](https://www.docker.com/) containers
 
 It will mostly be a wrapper around [docker.py](https://github.com/docker/docker-py) - the Python library for the Docker Engine API [1][2]
 
@@ -22,6 +22,7 @@ robot -d results -L TRACE robot/
 ```
 > NOTE: The initial run will take a while because MongoDB Docker image (aprox. 400 MB) will be pulled in the background. ... may be I should use a smaller image for demo :-)
 
+
 FEATURES
 ---
 
@@ -31,9 +32,18 @@ FEATURES
   - Docker Services
     - ...
 
-STATUS
+Status
 ---
 PRE-ALPHA :-)
+
+
+Contributiion
+---
+Clone/fork, create a pull-request, create an issue ... what ever
+
+Any contribution is welcome! 
+
+
 
 
 [1] https://github.com/docker/docker-py
