@@ -21,9 +21,13 @@ def stop_mongodb_container():
 def remove_mongodb_container():
     container = client.containers.get("MongoDB")
     container.remove()
-    # OPEN ISSUE: https://github.com/docker/docker-py/issues/2270
-    # status = container.wait(condition="removed")
-    return
+
+    try:
+        status = container.wait(condition='removed')
+        # GITHUB: https://github.com/docker/docker-py/issues/2270
+    except docker.errors.NotFound:
+        pass
+    return status
 
 def get_logs_from_mongobd():
     container = client.containers.get("MongoDB")
